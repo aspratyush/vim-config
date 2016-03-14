@@ -16,9 +16,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "vim-linux-coding-style"]
-	path = vim-linux-coding-style
-	url = https://github.com/vivien/vim-linux-coding-style.git
 [submodule "bundle/vim-linux-coding-style"]
 	path = bundle/vim-linux-coding-style
 	url = https://github.com/vivien/vim-linux-coding-style.git
