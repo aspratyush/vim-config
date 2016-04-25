@@ -129,3 +129,4 @@ export PATH=$PATH:/home/pratyush/tools/adt-bundle-linux-x86-20140702/sdk/ndk-bun
 alias gnr='grep -inR'
 alias adt='~/tools/eclipse/eclipse'
 alias cdt='~/tools/eclipse-cdt/eclipse'
+alias studio='~/tools/android-studio/bin/studio.sh'
