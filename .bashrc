@@ -117,12 +117,13 @@ if ! shopt -oq posix; then
 fi
 
 
-export JAVA_HOME=/home/pratyush/tools/jdk1.8.0_65
-export PATH=$PATH:/home/pratyush/tools/jdk1.8.0_65
+export JAVA_HOME=/home/pratyush/tools/jdk1.8.0_77
+export PATH=$PATH:/home/pratyush/tools/jdk1.8.0_77
 #export PATH=$PATH:/home/pratyush/workspace/CTG/dbus-cplusplus/build/bin
 export PATH=$PATH:/home/pratyush/tools/p4v-2015.2.1315639/bin
 export PATH=$PATH:/home/pratyush/tools/android-studio/bin
 export PATH=$PATH:/home/pratyush/tools/adt-bundle-linux-x86-20140702/sdk/ndk-bundle
+export PATH=$PATH:/opt/commonapi/bin
 #export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/pratyush/workspace/CTG/dbus-cplusplus/build/lib/pkgconfig
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/pratyush/workspace/CTG/dbus-cplusplus/lib
 
