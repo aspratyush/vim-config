@@ -2,7 +2,7 @@
 placeholder for my vimrc and vim bundles
 
 * Downloading   
-git pull <url> ~/.vim
+git pull _url_ ~/.vim
 
 * Init Submodules   
 git submodule update --init --recursive
