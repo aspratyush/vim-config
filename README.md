@@ -1,14 +1,14 @@
 # vim-config
 placeholder for my vimrc and vim bundles
 
-* Downloading
+* Downloading   
 git pull <url> ~/.vim
 
-* Init Submodules
+* Init Submodules   
 git submodule update --init --recursive
 
-* Update Submodules if needed
+* Update Submodules if needed   
 git submodule update --remote --recursive
 
-* Install YCM
+* Install YCM   
 
