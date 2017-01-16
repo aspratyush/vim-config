@@ -2,7 +2,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set number
+"set number
+noremap <F3> :set invnumber<CR>
+inoremap <F3> <C-O>:set invnumber<CR>
+
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion=1
 map <C-G> :YcmCompleter GoToDefinitionElseDeclaration<CR>
