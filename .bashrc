@@ -116,18 +116,32 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-export JAVA_HOME=/home/pratyush/tools/jdk1.8.0_77
-export PATH=$PATH:/home/pratyush/tools/jdk1.8.0_77
-#export PATH=$PATH:/home/pratyush/workspace/CTG/dbus-cplusplus/build/bin
-export PATH=$PATH:/home/pratyush/tools/p4v-2015.2.1315639/bin
-export PATH=$PATH:/home/pratyush/tools/android-studio/bin
+# path exports
+export PATH=$PATH:/home/pratyush/tools/p4v/bin
+export PATH=$PATH:/home/pratyush/tools/canary/android-studio/bin
 export PATH=$PATH:/home/pratyush/tools/adt-bundle-linux-x86-20140702/sdk/ndk-bundle
-export PATH=$PATH:/opt/commonapi/bin
-#export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/pratyush/workspace/CTG/dbus-cplusplus/build/lib/pkgconfig
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/pratyush/workspace/CTG/dbus-cplusplus/lib
+export PATH=$PATH:/home/pratyush/tools/caffe2_build/build/release/usr/local/binaries
+export PATH=$PATH:/home/pratyush/tools/caffe_build/build/install/bin
+export PATH=$PATH:/home/pratyush/tools/caffe_build/build/install/python
+export PATH=$PATH:/mnt/data/CTG/tools/opencv/build/local/bin
+export PYTHONPATH=/home/pratyush/tools/caffe2_build/build/release/usr/local:/home/pratyush/tools/caffe_build/build/install/python:/home/pratyush/tools/opencv/build/local/lib/python3.5:$PYTHONPATH
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export ANDROID_NDK_ROOT=/home/pratyush/tools/adt-bundle-linux-x86-20140702/sdk/ndk-bundle
+export LD_LIBRARY_PATH=/home/pratyush/tools/opencv/build/local/lib:/home/pratyush/tools/caffe2_build/build/release/usr/local/lib:$LD_LIBRARY_PATH
 
+# alias
 alias gnr='grep -inR'
 alias adt='~/tools/eclipse/eclipse'
-alias cdt='~/tools/eclipse-cdt/eclipse'
-alias studio='~/tools/android-studio/bin/studio.sh'
+#alias cdt='~/tools/eclipse-cdt/eclipse'
+alias studio='~/tools/canary/android-studio/bin/studio.sh'
+alias docker-start='sudo docker run -it -p 8888:8888 -p 6006:6006 -v ~/Public:/root/sharedfolder floydhub/dl-docker:cpu bash'
+alias sslencrypt='openssl des3 -salt -in $1'
+alias ssldecrypt='openssl des3 -d -salt -in $1'
+alias sslmd5='openssl dgst -md5 -c -hex $1'
+alias dstop='dstat --top-cpu --top-mem --top-io --time $1'
+alias gitlog='git log --pretty=oneline --abbrev-commit'
+alias gitmaintainer='git show HEAD | perl scripts/get_maintainer.pl --separator , --nokeywords --nogit --nogit-fallback --norolestats --nol'
+alias gitpatch='git format-patch -o /tmp/ HEAD^'
+alias argouml='java -jar /home/pratyush/tools/argouml-0.34/argouml.jar'
+
+PS1='\[\033[01;32m\]${USER}:\[\033[01;34m\]${PWD#"${PWD%/*}/"} \[\033[00m\]\$ '
